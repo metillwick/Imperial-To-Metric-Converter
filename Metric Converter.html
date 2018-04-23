@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Imperial-to-Metric Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Metric Converter.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-3 col-md-6">
+          <h1 class="display-4 text-center mb-3">Imperial-to-Metric Converter</h1>
+          <form>
+            <div class="form-group">
+              <input type="number" id="lbsInput" class="form-control form-control-lg" placeholder="Enter Pounds...">
+              <select class="custom-select mt-2">
+                <option selected>Select Unit</option>
+                <option value="1">Mass</option>
+                <option value="2">Distance</option>
+                <option value="3">Temperature</option>
+                <option value="4">Pressure</option>
+                <option value="5">Volume</option>
+              </select>
+            </div>
+          </form>
+          <div id="output">
+            <div class="card bg-primary mb-2">
+              <div class="blockquote">
+                <h4></h4>
+                <div id="gOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-success mb-2">
+              <div class="blockquote">
+                <h4></h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-danger mb-2">
+              <div class="blockquote">
+                <h4></h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="Metric Converter.js"></script>
+  </body>
+</html>
